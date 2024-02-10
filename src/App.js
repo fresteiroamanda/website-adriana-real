@@ -1,9 +1,11 @@
 import './App.css';
-import Header from './components/headerSection/header';
+import SectionOne from './components/sectionOne/sectionOne';
 
 function App() {
   return (
-    <Header />
+    <>
+      <SectionOne />
+    </>
   );
 }
 

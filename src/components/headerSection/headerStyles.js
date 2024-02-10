@@ -117,6 +117,7 @@ export const SocialMedia = styled.div`
   color: #ccc;
   font-size: 20px;
   cursor: pointer;
+  margin-right: 40px;
 
   @media (max-width: 768px) {
     margin: 0 auto;
