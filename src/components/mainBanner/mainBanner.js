@@ -19,7 +19,22 @@ const MainBanner = () => {
   }, []);
 
   return (
-    <ParallaxWrapper>
+    <>
+    {window.innerWidth > 768 ? (
+      <ParallaxWrapper>
+        <ParallaxContent>
+          <SpotifyCard
+            imageUrl={adriSpotify}
+            title="O mundo dá voltas"
+            description="Adriana Real"
+            link="https://open.spotify.com/intl-pt/album/58IuINo4QajtdnLjB0DUh5"
+          />
+        </ParallaxContent>
+      </ParallaxWrapper>
+    ) : (
+      <ParallaxWrapper />
+    )}
+    {window.innerWidth <= 768 && (
       <ParallaxContent>
         <SpotifyCard
           imageUrl={adriSpotify}
@@ -28,7 +43,8 @@ const MainBanner = () => {
           link="https://open.spotify.com/intl-pt/album/58IuINo4QajtdnLjB0DUh5"
         />
       </ParallaxContent>
-    </ParallaxWrapper>
+    )}
+  </>
   );
 };
 
