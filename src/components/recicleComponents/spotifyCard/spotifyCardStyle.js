@@ -16,6 +16,10 @@ export const CardContainer = styled.a`
   &:hover {
     transform: translateY(-10px);
   }
+
+  @media (max-width: 768px) {
+    background: #ab8c3a4f;
+  }
 `;
 
 export const Image = styled.img`
@@ -25,6 +29,10 @@ export const Image = styled.img`
 
 export const Content = styled.div`
   padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const Title = styled.h3`
@@ -33,9 +41,17 @@ export const Title = styled.h3`
   display: flex;
   justify-content: center;
   gap: 12px;
+
+  @media (max-width: 768px) {
+    color: #ccc;
+  }
 `;
 
 export const Description = styled.p`
   font-size: 14px;
   color: #000;
+
+  @media (max-width: 768px) {
+    color: #ccc;
+  }
 `;
