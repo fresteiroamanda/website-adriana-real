@@ -6,7 +6,7 @@ import { SlSocialSpotify } from "react-icons/sl";
 import { AiOutlineYoutube } from "react-icons/ai";
 import { CiMenuBurger } from "react-icons/ci";
 import { BsTiktok } from "react-icons/bs";
-import { HeaderWrapper, Logo, Links, SocialMedia, StyledLink, StyledIcons, Icon, MenuToggle, Modal, ModalContent, CloseButton } from "./headerStyles"
+import { HeaderWrapper, Logo, Links, SocialMedia, StyledLink, StyledIcons, Icon, MenuToggle, Modal, ModalContent, CloseButton, StyledImage } from "./headerStyles"
 
 const icons = [
   { Icon: FaInstagram, hoverColor: '#E21EC8', href: 'https://twitter.com' },
@@ -26,7 +26,8 @@ const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <HeaderWrapper>
       <Logo>
-        <img src={logo} width="250px" alt="Logo" />
+        <StyledImage src={logo} alt="Logo">
+        </StyledImage>
       </Logo>
       <MenuToggle onClick={toggleModal}>
         {isModalOpen ? (

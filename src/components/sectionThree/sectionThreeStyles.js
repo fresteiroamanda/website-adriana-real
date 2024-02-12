@@ -18,5 +18,5 @@ export const YoutubeContainer = styled.section`
 export const Logo = styled.section`
   display: flex;
   justify-content: center;
-  margin-top: 60px;
+  padding-top: 60px;
 `;

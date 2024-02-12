@@ -14,32 +14,13 @@ const SectionThree = () => {
   const width = isMobile ? '100%' : '100%';
 
   return (
-    <div style={{backgroundColor: 'black'}}>
-      <YoutubeContainer style={{ width: '100%', maxWidth: width, margin: 'auto' }}>
-        <iframe
-          width="100%"
-          height="315"
-          src={`https://www.youtube.com/embed/eRw1y1MKMx0`}
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-        <iframe
-          width="100%"
-          height="315"
-          src={`https://www.youtube.com/embed/XpbiDLuqnA4`}
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-      </YoutubeContainer>
+    <div style={{background: "#000"}}>
       <Logo>
         <img src={logo} width="150px" alt="Logo" />
       </Logo>
       <Gallery imagens={[gallery1, gallery2, gallery3, gallery4, gallery5, gallery6]} />
     </div>
+      
   );
 };
 

@@ -19,6 +19,18 @@ export const Logo = styled.div`
   }
 `;
 
+export const StyledImage = styled.img`
+
+  @media (min-width: 768px) {
+    width: 400px; 
+    margin: 0;
+  }
+
+  @media (max-width: 767px) {
+    width: 300px;
+  }
+`;
+
 export const Links = styled.nav`
   display: flex;
   gap: 32px;
