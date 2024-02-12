@@ -1,11 +1,12 @@
 import './App.css';
-import SpotifyCard from './components/recicleComponents/spotifyCard/spotifyCard';
 import SectionOne from './components/sectionOne/sectionOne';
+import SectionTwo from './components/sectionTwo/sectionAbout'
 
 function App() {
   return (
     <>
       <SectionOne />
+      <SectionTwo />
     </>
   );
 }

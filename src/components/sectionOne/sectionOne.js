@@ -1,6 +1,6 @@
 import React from 'react';
-import Header from '../headerSection/header';
-import Parallax from '../mainBanner/mainBanner';
+import Header from '../sectionComponents/headerSection/header';
+import Parallax from '../sectionComponents/mainBanner/mainBanner';
 import { AppWrapper, MainContent} from './sectionOneStyles'
 
 
