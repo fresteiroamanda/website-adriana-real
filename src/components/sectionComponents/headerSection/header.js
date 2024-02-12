@@ -41,7 +41,7 @@ const [isModalOpen, setIsModalOpen] = useState(false);
             <StyledLink href="#">Início</StyledLink>
             <StyledLink href="#">Sobre</StyledLink>
             <StyledLink href="#">Galeria</StyledLink>
-            <StyledLink href="#">Clave Carioca</StyledLink>
+            <StyledLink href="#">Minhas versões</StyledLink>
             <StyledLink href="#">Contato</StyledLink>
           </ModalContent>
         </Modal>
@@ -51,7 +51,7 @@ const [isModalOpen, setIsModalOpen] = useState(false);
           <StyledLink href="#">Início</StyledLink>
           <StyledLink href="#">Sobre</StyledLink>
           <StyledLink href="#">Galeria</StyledLink>
-          <StyledLink href="#">Clave Carioca</StyledLink>
+          <StyledLink href="#">Minhas versões</StyledLink>
           <StyledLink href="#">Contato</StyledLink>
         </Links>
       )}
