@@ -24,7 +24,6 @@ const SectionThree = () => {
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
-          style={{ paddingLeft: window.matchMedia('(max-width: 768px)').matches ? '0' : '30px' }}
         ></iframe>
         <iframe
           width="100%"
@@ -34,7 +33,6 @@ const SectionThree = () => {
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
-          style={{ paddingRight: window.matchMedia('(max-width: 768px)').matches ? '0' : '30px' }}
         ></iframe>
       </YoutubeContainer>
       <Logo>
