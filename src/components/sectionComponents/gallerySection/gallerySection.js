@@ -6,7 +6,7 @@ export const GalleryContainer = styled.div`
   grid-auto-rows: 400px; 
   grid-gap: 10px; 
   background: black;
-  margin: 40px;
+  padding: 40px;
 
   @media (max-width: 768px) {
     margin: 20px 0 0 0;

@@ -112,8 +112,8 @@ export const Modal = styled.div`
 
 export const ModalContent = styled.div`
   position: absolute;
-  top: 27%;
-  left: 16%;
+  top: 33%;
+  left: 20%;
   transform: translate(-50%, -50%);
   background-color: black;
   padding: 20px;

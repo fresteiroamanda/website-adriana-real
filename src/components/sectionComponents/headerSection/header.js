@@ -40,20 +40,20 @@ const [isModalOpen, setIsModalOpen] = useState(false);
         <Modal isOpen={isModalOpen} onClick={toggleModal}>
           <ModalContent onClick={e => e.stopPropagation()}>
             <StyledLink href="#">Início</StyledLink>
+            <StyledLink href="#">Redes Sociais</StyledLink>
             <StyledLink href="#">Sobre</StyledLink>
+            <StyledLink href="#">Orçamento</StyledLink>
             <StyledLink href="#">Galeria</StyledLink>
-            <StyledLink href="#">Minhas versões</StyledLink>
-            <StyledLink href="#">Contato</StyledLink>
           </ModalContent>
         </Modal>
       )}
       {!isModalOpen && (
         <Links>
           <StyledLink href="#">Início</StyledLink>
+          <StyledLink href="#">Redes Sociais</StyledLink>
           <StyledLink href="#">Sobre</StyledLink>
+          <StyledLink href="#">Orçamento</StyledLink>
           <StyledLink href="#">Galeria</StyledLink>
-          <StyledLink href="#">Minhas versões</StyledLink>
-          <StyledLink href="#">Contato</StyledLink>
         </Links>
       )}
       <SocialMedia>
