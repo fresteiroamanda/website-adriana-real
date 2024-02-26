@@ -7,7 +7,8 @@ export const YoutubeContainer = styled.div`
   align-items: center;
   justify-content: center;
   gap: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
+
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -19,7 +20,7 @@ export const Logo = styled.div`
   display: flex;
   justify-content: center;
   padding: 40px 0;
-  background: black;
+  background: #000;
 `;
 
 export const Button = styled.button`
@@ -28,10 +29,10 @@ export const Button = styled.button`
   margin: 0 auto;
   padding: 20px;
   border-radius: 8px;
-  background: #193233;
-  border: none;
-  color: #ccc;
-  font-size: 20px;
+  background: #000;
+  border: 1px solid #ddbc69b8;
+  color: #ddbc69b8;
+  font-size: 18px;
   cursor: pointer;
 
   &:hover {

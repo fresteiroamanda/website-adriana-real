@@ -2,14 +2,17 @@ import styled from 'styled-components';
 
 export const HeaderWrapper = styled.header`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding: 30px;
   background-color: #000;
+  position: fixed;
+  width: 100%;
+  z-index: 999999;
 
   @media (max-width: 768px) {
-    flex-direction: column;
+   flex-direction: column;
     align-items: flex-start;
+    padding: 0 20px;
   }
 `;
 
@@ -27,7 +30,7 @@ export const StyledImage = styled.img`
   }
 
   @media (max-width: 767px) {
-    width: 300px;
+    width: 250px;
   }
 `;
 
@@ -36,6 +39,7 @@ export const Links = styled.nav`
   gap: 32px;
   text-decoration: none;
   color: #ccc;
+  cont-size: 19px;
 
   @media (max-width: 768px) {
     width: 100%;
@@ -93,6 +97,7 @@ export const MenuToggle = styled.div`
   @media (max-width: 768px) {
     display: block;
     color: #ccc;
+    margin-left: 20px;
   }
 `;
 

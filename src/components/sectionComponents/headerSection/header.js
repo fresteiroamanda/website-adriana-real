@@ -5,12 +5,10 @@ import { IoCloseOutline } from "react-icons/io5";
 import { SlSocialSpotify } from "react-icons/sl";
 import { AiOutlineYoutube } from "react-icons/ai";
 import { CiMenuBurger } from "react-icons/ci";
-import { BsTiktok } from "react-icons/bs";
 import { HeaderWrapper, Logo, Links, SocialMedia, StyledLink, StyledIcons, Icon, MenuToggle, Modal, ModalContent, CloseButton, StyledImage } from "./headerStyles"
 
 const icons = [
   { Icon: FaInstagram, hoverColor: '#E21EC8', href: 'https://twitter.com' },
-  { Icon: BsTiktok, hoverColor: '#22EBE7', href: 'https://twitter.com' },  
   { Icon: SlSocialSpotify, hoverColor: 'lightgreen', href: 'https://facebook.com' },
   { Icon: AiOutlineYoutube, hoverColor: 'red', href: 'https://instagram.com', size: 25 },
   { Icon: FaWhatsapp, hoverColor: '#0E691D', href: 'https://linkedin.com' }

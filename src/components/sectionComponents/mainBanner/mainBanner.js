@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import { ParallaxWrapper, ParallaxContent, TextContent, Button } from "./mainBannerStyles"
+import React from 'react';
+import { ParallaxWrapper, TextContent, Button, MainImage, ImageOverlay } from "./mainBannerStyles"
+import mainBanner from '../../../assets/main_banner.jpg'
 
 const MainBanner = () => {
-  const [scrollOffset, setScrollOffset] = useState(0);
 
   const handleRedirect = () => {
     const phoneNumber = '+5521969372134';
@@ -11,26 +11,14 @@ const MainBanner = () => {
     window.open(url, '_blank')
   }  
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrollOffset(window.pageYOffset);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
   return (
     <ParallaxWrapper>
-      <ParallaxContent>
-        <TextContent>
-          Cantora do RJ com repertório nacional eclético para os mais diversos tipos de eventos
-          <Button onClick={handleRedirect}>Faça seu orçamento agora</Button>
-        </TextContent>
-      </ParallaxContent>
+      <MainImage src={mainBanner} alt="Main Banner" />
+      <ImageOverlay />
+      <TextContent>
+        <p>Cantora do RJ com repertório nacional eclético para os mais diversos tipos de eventos</p>
+        <Button onClick={handleRedirect}>Faça seu orçamento agora</Button>
+      </TextContent>
     </ParallaxWrapper>
   );
 };
